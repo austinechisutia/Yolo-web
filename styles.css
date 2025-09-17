@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700;900&family=Kalnia:wght@100..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne:wght@400..800&family=Unbounded:wght@200..900&family=Wire+One&family=Yeseva+One&family=Young+Serif&display=swap');
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+@font-face{
+    font-family: 'Humane';
+    src: url(fonts/Humane-Bold.otf);
+}
+:root {
+    --nope-yellow: #ffd300;
+    --white: white;
+    --page-padding-desktop: 80px;
+    --page-padding-tablet: 32px;
+    --page-padding-mobile: 20px;
+    --honeydew: honeydew;
+    --black: black;
+    --pink: #ffcfe1;
+    --lilac: #9f8fa9;
+    --beige-10: #ffeee0;
+    --dark-blue: #18113c;
+    --dark-red: #a70a00;
+    --red: #c50019;
+    --none: 0px;
+    --max-width: 1600px;
+    --near-black: #0c0c0c;
+    --guidelines-image-small: 25vw;
+    --guidelines-image-large: 24rem;
+    --beige-20: #ffe0c8;
+    --beige-30: #ffd7b7;
+    --light-steel-blue: #b2d7ff;
+    --dark-slate-grey: #38534d45;
+    --dark-goldenrod: #c78c00;
+    --basil-green: var(--light-steel-blue);
+    --page-padding-laptop: 56px;
+    --grey: #767676;
+    --body-font: "Poppins";
+    --pink2: #ffb4d1;
+    --fontsize: 30px;
+    --small-fontsize: 20px;
+}
+body{
+    background: var(--dark-blue);
+    font-family: var(--body-font);
+    overflow-x: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+.main-logo{
+    font-size: 30px;
+    font-family: var(--body-font);
+    font-weight: 700;
+    color: var(--white);
+}
+.nav-link, .nav-bar-icon{
+    background-color: var(--lilac);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--dark-blue);
+    font-weight: 500;
+
+}
+.active, .nav-bar-icon{
+    background-color: var(--pink2);
+}
+.nav-bar-icon{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.container-text{
+    position: relative;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.container-text h1{
+    font-size: 200px;
+     font-family: 'Humane';
+
+}
+.yolo{
+    color: var(--nope-yellow);
+
+}
+.container-text p{
+    text-align: center;
+    max-width: 500px;
+    font-size: 20px;
+    overflow: hidden;
+
+}
+.stars{
+    position: relative;
+    display: flex;
+    top: 0;
+    z-index: -1;
+}
+.stars .left{
+    display: flex;
+    left: -10px;
+}
+.stars img{
+}
+
+
+
+
