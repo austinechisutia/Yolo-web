@@ -99,6 +99,8 @@ nav{
 .container-text h1{
     font-size: 12em;
      font-family: 'Humane';
+      -webkit-box-reflect: below 0px
+    linear-gradient(transparent, rgba(0,0,0,0.3));
 
 }
 .yolo{
@@ -120,10 +122,12 @@ nav{
     align-items: center;
     top: 0;
     left: 0;
+    
 }
 .right{
     position: absolute;
     display: flex;
+    
 }
 .left{
     display: flex;
@@ -134,14 +138,15 @@ nav{
 .yolo-anime{
     display: flex;
     position: absolute;
-    bottom: 15em;
-    right: 1em;
+    bottom: 20em;
+    right: 5em;
     rotate: 10deg;
+    
 }
 .butterfly{
     display: flex;
     position: absolute;
-    left: 1em;
+    left: 20em;
     bottom: 20em;
 }
 .butterfly img{
@@ -162,15 +167,90 @@ nav{
     position: absolute;
     right: -10em;
     bottom: 0em;
+    z-index: 1000;
 }
 .circle {
+    position: absolute;
     display: flex;
-  width: 80em;       /* Circle width */
-  height: 80em;      /* Circle height - same as width */
-  background-color: rgb(1, 52, 163); /* Circle color */
-  border-radius: 50%; /* Makes it a perfect circle */
-  margin-top: 15em;
+    align-items: center;
+    justify-content: center;
+  width: 100em;       /* Circle width */
+  height: 100em;      /* Circle height - same as width */
+  background-color: rgb(3, 115, 226); /* Circle color */
+  border-radius: 50%;
+  left: -5%;
+  bottom: -90em; /* Makes it a perfect circle */
 }
+.cat{
+    position: absolute;
+    bottom: -1em;
+    right: 30em;
+}
+.cat img {
+    right: 20em;
+    width: 20em;
+    transform: scaleX(-1);
+
+}
+
+.img1, .img2, .img3{
+    position: absolute;
+   
+    z-index: 1001;
+}
+.img1{
+     bottom: -1em;
+    left: -7em;
+}
+
+.img3{
+    right: -5em;
+    top: 15em;
+    z-index: 900;
+}
+.img2{
+    left: -15em;
+    top: 0;
+    rotate: 45deg;
+
+}
+
+.shake {
+  animation: shake 5s linear infinite; /* duration | timing | repeat */
+}
+
+@keyframes shake {
+  0% { transform: rotate(0); }
+  25% { transform:  rotate(15deg); }
+  50% { transform: rotate(30deg); }
+  75% { transform:  rotate(15deg); }
+  100% { transform: rotate(0); }
+}
+
+.shake1 {
+  animation: shake1 5s linear infinite; /* duration | timing | repeat */
+}
+
+@keyframes shake1 {
+  0% { transform: rotate(0); }
+  25% { transform:  rotate(-15deg); }
+  50% { transform: rotate(-30deg); }
+  75% { transform:  rotate(-15deg); }
+  100% { transform: rotate(0); }
+}
+
+.shake2 {
+  animation: shake2 5s linear infinite; /* duration | timing | repeat */
+}
+
+@keyframes shake2 {
+  0% { transform: rotate(0); }
+  25% { transform:  rotate(-4deg); }
+  50% { transform: rotate(-2deg); }
+  75% { transform:  rotate(-1deg); }
+  100% { transform: rotate(0); }
+}
+
 
 
 
