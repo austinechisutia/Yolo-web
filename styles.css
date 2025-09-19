@@ -153,7 +153,7 @@ nav{
 .butterfly img{
     width: 10%;
      -webkit-box-reflect: below 10px
-    linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    linear-gradient(transparent, rgba(0, 0, 0, 0.1));
 }
 .bush{
     position: absolute;
@@ -170,6 +170,7 @@ nav{
     bottom: 0em;
     z-index: 1000;
 }
+
 .circle {
     position: absolute;
     display: flex;
@@ -208,6 +209,7 @@ nav{
     right: -5em;
     top: 15em;
     z-index: 900;
+
 }
 .img2{
     left: -15em;
@@ -215,7 +217,68 @@ nav{
     rotate: 45deg;
 
 }
+@media screen and (max-width: 900px){
+    .bush{
+        opacity: 0;
+    }
+    .butterfly{
+        left: 10em;
+        z-index: 1000;
+    }
+    .img3{
+        display: flex;
+        position: absolute;
+        right: -25em;
+    }
+    .img2{
+        left: -20em;
+    }
+    .img1{
+        left: -15em;
+    }
+    .circle{
+        left: -65%;
+        bottom: -93em;
+    }
+    .cat{
+        left: 10em;
+    }
+    .bush2{
+        bottom: -5em;
+    }
+}
 
+
+@media screen and (max-width: 1500px){
+    .bush{
+        opacity: 0;
+    }
+    .butterfly{
+        left: 10em;
+        z-index: 1000;
+    }
+    .img3{
+        display: flex;
+        position: absolute;
+        right: -25em;
+    }
+    .img2{
+        left: -20em;
+    }
+    .img1{
+        left: -15em;
+    }
+    .circle{
+        left: 600em;
+        bottom: -93em;
+    }
+    .cat{
+        left: 20em;
+    }
+    .bush2{
+        bottom: -5em;
+    }
+}
 .shake {
   animation: shake 5s linear infinite; /* duration | timing | repeat */
 }
@@ -268,6 +331,26 @@ nav{
     position: absolute;
     bottom: 0;
     z-index: 900;
+}
+@media screen and (max-width: 900px) {
+    .menu a{
+        display: none;
+    }
+    .container-text h1{
+    font-size: 6em; 
+     -webkit-box-reflect: below 10px
+    linear-gradient(transparent, rgba(0, 0, 0, 0));
+    
+
+    }
+
+    .container-text p{
+    font-size: 1.2em;  
+    }
+}
+
+.bg-cover, .line2, .spill{
+    display: none;
 }
 
 
